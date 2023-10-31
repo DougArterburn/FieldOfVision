@@ -145,7 +145,7 @@ namespace ASignInSpace
                 throw new Exception("SegmentHeight must be <= Height");
             }
 
-            if (FieldOfVisionWidth > SegmentWidth)
+            if (FieldOfVisionWidth >= SegmentWidth)
             {
                 throw new Exception("FieldOfVisionWidth must be <= SegmentWidth");
             }
