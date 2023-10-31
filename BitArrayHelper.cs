@@ -42,7 +42,7 @@ namespace ASignInSpace
         static public BitArray TwoByTwoCellsAll()
         {
             System.Reflection.Assembly assem = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream starmapStream = assem.GetManifestResourceStream("ASignInSpace.TwoByTwoCellsAll.bin");
+            Stream starmapStream = assem.GetManifestResourceStream("ASignInSpace.TwoByTwoAll.bin");
             byte[] starmap = new byte[starmapStream.Length];
             starmapStream.Read(starmap, 0, (int)starmapStream.Length);
             var dataBitsIn = BitArrayHelper.CreateBitArray(starmap);
